@@ -15,27 +15,26 @@ A very zen todo / task app made with Tauri and React. Uses sqlite as a database.
 
 I am not happy using Apple Notes and too poor to pay for an app - I decided to make one by myself to suit my exact needs.
 
-## Design of the structure
-
-Electron and React are both on their own folders to keep them separate and to have more clear structure.
-While developing Electron.js loads the React.js dev server. When ready for production, bundle the compiled React.js app when and package the app into an executable. React project structure is made with Vite.
+I also need the button to copy the content of the task to send it easily to my mentor on Slack.
 
 ## How to install
 
 1. Clone the repository
+2. run 'npm -i' on the folder
 
-## Development
+NOTE: Tauri has a lot of dependencies, so the folder size is somewhere around 3GB.
 
-On folder /eletron-app/main.js comment out the line with loadFile and uncomment loadURL
+## How to use
 
-//mainWindow.loadFile('index.html'); //prod
-mainWindow.loadURL('http://localhost:3000'); //dev
+Development:
+npm run tauri dev
 
-- Open 2 terminal windows
-- On 1st window run 'npm run dev' from the /react-app -folder
-- On 2nd window run 'npm start' from the /electron-app folder
+Build:
+npm run tauri build
 
 ## Requirements
+
+<https://tauri.app/v1/guides/getting-started/prerequisites>
 
 ## Recommended IDE Setup
 
