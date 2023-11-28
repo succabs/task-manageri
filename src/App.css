@@ -1,0 +1,22 @@
+#root {
+  margin: 0 auto;
+  padding: 0rem 0rem;
+}
+
+.task-view {
+  padding: 0 2rem;
+}
+
+.task-list {
+  padding: 0 2rem;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
